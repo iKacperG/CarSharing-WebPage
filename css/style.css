@@ -1,83 +1,86 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
-position: relative;
+    position: relative;
     align-items: center;
     max-width: 100%;
-    max-height:100vh;
+    max-height: 100vh;
 }
 
 
-.content{
+.content {
     display: flex;
-    width:1088px;
-    height:100vh;
+    flex-direction: column;
+    width: 1088px;
+    height: 100vh;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
+
 }
 
 /*CHECK IF WORKING LATER*/
 
 
-.main-container{
+.main-container {
     display: flex;
     justify-content: center;
-background: #333 url("../images/Image.jpg")  top/contain no-repeat;
+    background: #333 url("../images/Image.jpg") top/cover no-repeat;
     width: 100%;
-}
-.main-container::before{
-    content:"";
-    position: absolute;
-    background: #000;
-    opacity:0.3;
-    width: 100%;
-    height:100%;
 }
 
-.navbar{
-    height:90px;
-    width:100%;
+.main-container::before {
+    content: "";
+    position: absolute;
+    background: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    height: 90px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     color: #fff;
 
 }
 
-.main-container::after{
+.main-container::after {
     content: "";
-    background:#000;
-    opacity:0.5;
+    background: #000;
+    opacity: 0.5;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    width:100%;
-    height:90px;
-    position:absolute;
+    width: 100%;
+    height: 90px;
+    position: absolute;
     z-index: 1;
 }
 
-header{
+header {
 
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 35px;
     text-transform: uppercase;
-    color:red;
+    color: red;
     z-index: 2;
 }
-header>img{
+
+header > img {
     padding-right: 10px;
 
 }
 
-header::after{
-    content:"Sharing";
-    color:#fff;
+header::after {
+    content: "Sharing";
+    color: #fff;
     z-index: 2;
 }
 
 
-
-.navigation{
+.navigation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,17 +90,104 @@ header::after{
 }
 
 
-a{
+a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
     text-decoration: none;
-    padding:0 40px;
-    height:100%;
+    padding: 0 40px;
+    height: 100%;
 }
 
-a:hover{
+a:hover {
 
     background: rgba(255, 255, 255, 0.2);
+}
+
+
+.main-content-container {
+    margin: calc(244px - 90px) auto;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+
+    padding: 34px 0;
+}
+
+p {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content:center;
+
+
+}
+
+button {
+    width: 218px;
+    height: 68px;
+
+    box-shadow: 0 3px 6px rgba(255, 0, 0, 0.3);
+    border:none;
+    border-radius: 40px;
+    text-transform: uppercase;
+
+}
+
+.share{
+    color:#fff;
+    background: #FF0000 0 0;
+    z-index: 1;
+    margin:40px calc(25px / 2);
+
+}
+
+.features{
+    background:#fff 0 0;
+    color:#ff0000;
+    z-index:1;
+    margin:40px calc(25px / 2);
+
+
+}
+
+.section-icon{
+    position:absolute;
+    background: red url("../images/Icon Arrow Down.svg") center no-repeat;
+    width: 55px;
+    height:55px;
+    bottom:-27px;
+    border-radius: 50%;
+}
+
+
+
+.test{
+    background:white;
+    width:100%;
+    height:100vh;
 }
