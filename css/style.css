@@ -213,7 +213,7 @@ section.blog-content{
 .blog-header {
     text-transform: uppercase;
     font-size: 35px;
-    padding: 25px 0;
+    padding: 10px 0;
     color: black;
 
 }
@@ -221,16 +221,18 @@ section.blog-content{
 .blog-header::before {
     content: "------";
     letter-spacing: -5px;
-    padding: 35px;
+    padding: 10px;
     color: red;
+    text-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
 
 }
 
 .blog-header::after {
     content: "------";
     letter-spacing: -5px;
-    padding: 35px;
+    padding: 10px;
     color: red;
+    text-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
 }
 
 
@@ -303,6 +305,7 @@ article.car-fragments{
     background: #28272C;
     display: flex;
     justify-content: center;
+
 }
 
 .header-service-container{
@@ -322,7 +325,7 @@ article.car-fragments{
     letter-spacing: -5px;
     padding: 10px;
     color: red;
-    box-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
+    text-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
 
 }
 
@@ -331,7 +334,7 @@ article.car-fragments{
     letter-spacing: -5px;
     padding: 10px;
     color: #ff0000;
-    box-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
+    text-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
 }
 
 .main-service-container{
@@ -345,6 +348,7 @@ article.car-fragments{
     display: flex;
     max-width: 100%;
     max-height: 100vh;
+
 
 }
 
@@ -360,10 +364,10 @@ article.car-fragments{
 .service-article{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 10px;
     text-align: center;
     align-items: center;
-    padding: 0 calc(45px / 2);
 }
 
 .service-article>button{
@@ -419,6 +423,163 @@ article.car-fragments{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     max-width: 100%;
     height: 100vh;
+}
+
+section.contact-articles{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.submit-button{
+       background-color: #fff;
+    color: red;
+    width: 142px;
+    height: 40px;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 3px 6px rgba(255, 0, 0, 0.3);
+    border-radius: 40px;
+    border: 1px solid #ff0000;
+    align-self:flex-end;
+}
+
+input, textarea{
+    background: #ffffff 0 0 no-repeat padding-box;
+    box-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding:8px;
+ max-width: 100%;
+
+    color:#B2B2B2;
+
+
+}
+.contact-photo{
+
+    flex-grow:1;
+
+}
+.contact-form{
+
+
+
+}
+.main-contact-container{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-articles img{
+    max-width:100%;
+    max-height:100%;
+    width:170px;
+    height:170px;
+    padding:calc(25px / 2) 0;
+
+}
+
+.contact-photo{
+    background: url("../images/Form Photo.png")center/cover;
+    width:100%;
+    height:100%;
+    min-width: 444px;
+    min-height: 317px;
+    padding:0 8px;
+}
+
+.contact-form{
+    width:100%;
+    height:100%;
+    min-width: 444px;
+    min-height: 317px;
+    padding:0 8px;
+    color:#B2B2B2;
+}
+
+.contact-form-layer{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.form-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+input[type="checkbox"]{
+    width: 0;
+    height: 0;
+
+
+
+}
+
+
+input:focus,textarea:focus{
+    border-color:#FF0000;
+    box-shadow: 0px 1px 6px rgba(255, 0, 0, 0.3);
+}
+
+.checkbox-button{
+width:16px;
+    height:16px;
+    border-radius:none;
+
+}
+
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #B2B2B2;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #B2B2B2;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #B2B2B2;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #B2B2B2;
+  opacity: 1;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+}
+
+.checkbox span {
+
+
+    border: 1px solid #B2B2B2;
+    cursor: pointer;
+    margin-right: 15px;
+    width:100px;
+    height:16px;
+    border-radius:none;
+}
+
+.checkbox input:checked + span {
+    background:#fff url("../images/Icon Check.svg")center no-repeat;
+    border:1px solid #ff0000;
 }
