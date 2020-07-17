@@ -1,3 +1,9 @@
+.img{
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -15,6 +21,8 @@
     height: 100vh;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
+
+
 
 }
 
@@ -57,7 +65,7 @@
     z-index: 1;
 }
 
-header {
+header.nav-header {
 
     display: flex;
     justify-content: center;
@@ -73,7 +81,7 @@ header > img {
 
 }
 
-header::after {
+header.nav-header::after {
     content: "Sharing";
     color: #fff;
     z-index: 2;
@@ -142,7 +150,7 @@ p {
 
 .buttons {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 
 
 }
@@ -152,42 +160,138 @@ button {
     height: 68px;
 
     box-shadow: 0 3px 6px rgba(255, 0, 0, 0.3);
-    border:none;
+    border: none;
     border-radius: 40px;
     text-transform: uppercase;
 
 }
 
-.share{
-    color:#fff;
+.share {
+    color: #fff;
     background: #FF0000 0 0;
     z-index: 1;
-    margin:40px calc(25px / 2);
+    margin: 40px calc(25px / 2);
 
 }
 
-.features{
-    background:#fff 0 0;
-    color:#ff0000;
-    z-index:1;
-    margin:40px calc(25px / 2);
+.features {
+    background: #fff 0 0;
+    color: #ff0000;
+    z-index: 1;
+    margin: 40px calc(25px / 2);
 
 
 }
 
-.section-icon{
-    position:absolute;
+.section-icon {
+    position: absolute;
     background: red url("../images/Icon Arrow Down.svg") center no-repeat;
     width: 55px;
-    height:55px;
-    bottom:-27px;
+    height: 55px;
+    bottom: -27px;
     border-radius: 50%;
 }
 
+.blog-container{
+    display: flex;
+    justify-content: center;
 
-
-.test{
-    background:white;
-    width:100%;
-    height:100vh;
 }
+section.blog-content{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    justify-content: center;
+   max-width: 100%;
+    max-height: 100vh;
+}
+
+.blog-header {
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 100px 0 35px 0;
+    color: black;
+
+}
+
+.blog-header::before {
+    content: "------";
+    letter-spacing: -5px;
+    padding: 35px;
+    color: red;
+
+}
+
+.blog-header::after {
+    content: "------";
+    letter-spacing: -5px;
+    padding: 35px;
+    color: red;
+}
+
+
+.blog-articles{
+    display: flex;
+    flex-direction: row;
+   max-width: 100%;
+    max-height: 100vh;
+}
+
+
+
+
+.car-fragments img{
+    max-width:100%;
+    max-height:100%;
+    width:352px;
+    height:234px;
+   padding:calc(25px / 2) 0;
+}
+
+
+article.car-fragments{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+    padding:10px;
+
+}
+
+
+.car-fragments>h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    text-transform: uppercase;
+    color:#6a6a6a;
+    padding:15px 0;
+}
+.car-fragments>p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color:#6a6a6a;
+
+    padding:15px 0;
+}
+
+
+.car-fragments>button{
+    background-color:#FF0000;
+    color:white;
+    width: 142px;
+    height: 40px;
+    padding: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 3px 6px rgba(255, 0, 0, 0.3);
+}
+
+.blog-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
